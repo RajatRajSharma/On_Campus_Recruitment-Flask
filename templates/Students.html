@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Student Log In
+{% endblock %}
+
+{% block navbar %}
+    <ul class="navbar-nav me-auto mt-2">
+        <li class="nav-item"><a class="nav-link" href="/stud_comp_list">Student home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_form">Student Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_choose">Choose Company</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_all">Your Competitor</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto mt-2">
+        <li class="nav-item" style=" background-color: red; border-radius: 3rem; padding: 0rem 0.5rem; "><a class="nav-link" href="/logout" style=" color: white; ">Log Out</a></li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+    <h2 style="font-size: 3rem;" ><strong><i>Welcome to On-campus Recruitment!</i></strong></h2>
+    <p style="font-size: 2rem;" ><i>Dear students, we are delighted to welcome you to our On-campus recruitment platform.<br>Here, you can explore exciting job opportunities from top companies, submit your applications,<br>and embark on a journey towards a successful career.<br>Best of luck with your job search!</i></p>
+
+{% endblock %}

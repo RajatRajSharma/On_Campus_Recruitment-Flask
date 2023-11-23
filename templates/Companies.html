@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    comp Log In
+{% endblock %}
+
+{% block navbar %}
+    <ul class="navbar-nav me-auto mt-2">
+        <li class="nav-item"><a class="nav-link" href="/dashboard">Company Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/comp_form">Company Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="/comp_list">List of Company</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto mt-2">
+        <li class="nav-item" style=" background-color: red; border-radius: 3rem; padding: 0rem 0.5rem; "><a class="nav-link" href="/logout" style=" color: white; ">Log Out</a></li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+    <h2 style="font-size: 3rem;" ><strong><i>Welcome to On-campus Recruitment!</i></strong></h2>
+    <p style="font-size: 2rem;" ><i>Dear companies, we extend a warm welcome to you on our On-campus recruitment<br>platform. This is your gateway to connect with talented students and find the best<br>candidates for your organization. Explore our platform, post job openings, and kickstart your<br>hiring journey with us!</i></p>
+{% endblock %}

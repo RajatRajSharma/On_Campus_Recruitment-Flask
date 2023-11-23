@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <div class="login-container" id="login_part">
+        <div class="row">
+
+          <div class="col-8">
+            <div class="flex justify-center" style="margin-left: 5rem; margin-bottom: 5rem;">
+                <p id="log_intro_head" ><strong><i>Wishing You the Best of Luck for On-Campus Recruitment!</i></strong></p>
+                <p id="log_intro_para">As the eagerly awaited on-campus recruitment season unfolds, we want to take a moment to extend our heartfelt wishes for your success. <br><br>With this significant milestone just around the corner, we wish you the very best of luck, and we have every confidence that you will make our institution proud.</p>
+            </div>
+          </div>
+          <div class="col-4" id="login-box">
+
+                    <h2 style=" margin-left: 2.6rem;" >Login</h2>
+                    <form action="/login" method="post" id="login-form">
+                        <div class="mb-3">
+                            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="username" name="username" placeholder="Username" type="text" style=" padding: 5% 14%; ">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password" style=" padding: 5% 14%; " >
+                        </div>
+                        <select name="user_type" id="user_type" class="log-form-group" placeholder="User-type" type="text" >
+                            <option value="Students">Students</option>
+                            <option value="Companies">Companies</option>
+                            <option value="teacher">Admin</option>
+                        </select>
+                        <button class="btn btn-primary" type="submit" style="padding: 0.3rem 1.8rem;font-size: 1.2rem;margin: 0.6rem;margin-left: 3.6rem;">Log In</button>
+
+                        <div class="login-register">
+                            <p>Don't have an account? <a href="/register">Register</a></p>
+                        </div>
+                    </form>
+
+          </div>
+        </div>
+      </div>
+
+{% endblock %}

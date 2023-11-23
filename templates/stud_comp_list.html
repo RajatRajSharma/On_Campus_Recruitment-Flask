@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Student Log In
+{% endblock %}
+
+{% block navbar %}
+    <ul class="navbar-nav me-auto mt-2">
+        <li class="nav-item"><a class="nav-link" href="/stud_comp_list">Student home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_form">Student Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_choose">Choose Company</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_all">Your Competitor</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto mt-2">
+        <li class="nav-item" style=" background-color: red; border-radius: 3rem; padding: 0rem 0.5rem; "><a class="nav-link" href="/logout" style=" color: white; ">Log Out</a></li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+    <h2><strong><i>List of Companies that Participated in College Recruitment</i></strong></h2>
+    <table class="table table-striped">
+        <thead>
+                <tr>
+                        <th>Company name</th>
+                        <th>Location</th>
+                        <th>Min SGPA requirement</th>
+                        <th>Min Salary offered</th>
+                        <th>Max Salary offered</th>
+                        <th>Vacancies</th>
+                </tr>
+        </thead>
+        <tbody>
+                {% for company in company_table %}
+                    <tr>
+                            <td>{{ company.c_name }}</td>
+                            <td>{{ company.c_loc }}</td>
+                            <td>{{ company.c_min_SCGPA }}</td>
+                            <td>{{ company.c_min_Sal }}</td>
+                            <td>{{ company.c_max_Sal }}</td>
+                            <td>{{ company.vacancies }}</td>
+                    </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

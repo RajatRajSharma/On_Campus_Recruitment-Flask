@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <div id="register-box">
+        <h2 id="register_h2">Register now</h2>
+        <form action="{{ url_for('register') }}" method="post" class="regis" id="register-form">
+            <div id="reg-form-group">
+                <input autocomplete="off" autofocus class="form-control" name="username" placeholder="Username" type="text">
+            </div>
+            <div id="reg-form-group">
+                <input class="form-control" name="password" placeholder="Password" type="password">
+            </div>
+            <div id="reg-form-group">
+                <input class="form-control" name="confirmation" placeholder="Confirm password" type="password">
+            </div>
+            <select name="user_type" id="reg-form-group" placeholder="User-type" type="text" style=" padding: 0.5rem 0.3rem; ">
+                <option name="user_type" value="Students">Students</option>
+                <option name="user_type" value="Companies">Companies</option>
+                <option name="user_type" value="teacher">Admin</option>
+            </select>
+            <button class="btn btn-primary" type="submit" id="reg-form-group" >Register</button>
+        </form>
+
+    </div>
+{% endblock %}

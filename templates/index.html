@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <!-- Main content -->
+    <div id="main-content">
+        {% if session["user_type"] == "Students" %}
+            <!-- Student-specific content -->
+            {% block student_content %}
+                <p>This is content for students.</p>
+            {% endblock %}
+        {% elif session["user_type"] == "company" %}
+            <!-- Admin-specific content -->
+            {% block company_content %}
+                <p>This is content for admins.</p>
+            {% endblock %}
+        {% else %}
+            <!-- Default content if user_type doesn't match any of the above -->
+            <p>Welcome, user!</p>
+        {% endif %}
+    </div>
+
+{% endblock %}

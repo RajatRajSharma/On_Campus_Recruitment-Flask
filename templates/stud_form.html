@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Student Log In
+{% endblock %}
+
+{% block navbar %}
+    <ul class="navbar-nav me-auto mt-2">
+        <li class="nav-item"><a class="nav-link" href="/stud_comp_list">Student home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_form">Student Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_choose">Choose Company</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_all">Your Competitor</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto mt-2">
+        <li class="nav-item" style=" background-color: red; border-radius: 3rem; padding: 0rem 0.5rem; "><a class="nav-link" href="/logout" style=" color: white; ">Log Out</a></li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+    <h2><strong><i>Get started by filling your Applicant form</i></strong></h2>
+
+    <form action="{{ url_for('stud_form') }}" method="post">
+        <label for="sf_name">Student Name :</label>
+        <input autocomplete="off" autofocus="" class="form-control mx-auto w-auto" type="text" name="sf_name" id="sf_name">
+        <br>
+        <label for="sf_stream">Stream :</label>
+        <input autocomplete="off" class="form-control mx-auto w-auto" type="text" name="sf_stream" id="sf_stream">
+        <br>
+        <label for="sf_SCGPA">SCGPA :</label>
+        <input autocomplete="off" class="form-control mx-auto w-auto" type="text" name="sf_SCGPA" id="sf_SCGPA">
+        <br>
+        <label for="sf_cv">Resume file:</label>
+        <input type="file" name="sf_cv" id="sf_cv" accept=".jpg, .jpeg, .png, .gif, .pdf, .docx, .xlsx" required>
+        <br>
+        <label for="sf_linkedin">Linkedin :</label>
+        <input autocomplete="off" class="form-control mx-auto w-auto" type="text" name="sf_linkedin" id="sf_linkedin">
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+{% endblock %}

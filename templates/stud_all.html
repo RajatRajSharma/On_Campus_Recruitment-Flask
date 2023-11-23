@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Student Log In
+{% endblock %}
+
+{% block navbar %}
+    <ul class="navbar-nav me-auto mt-2">
+        <li class="nav-item"><a class="nav-link" href="/dashboard">Student home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_form">Student Form</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_choose">Choose Company</a></li>
+        <li class="nav-item"><a class="nav-link" href="/stud_all">Your Competitor</a></li>
+    </ul>
+    <ul class="navbar-nav ms-auto mt-2">
+        <li class="nav-item" style=" background-color: red; border-radius: 3rem; padding: 0rem 0.5rem; "><a class="nav-link" href="/logout" style=" color: white; ">Log Out</a></li>
+    </ul>
+{% endblock %}
+
+{% block main %}
+    <h2><strong><i>We present you ,your Competitors</i></strong></h2>
+    <table class="table table-striped">
+        <thead>
+                <tr>
+                        <th>User id</th>
+                        <th>Student name</th>
+                        <th>Stream</th>
+                        <th>Grade( SCGPA )</th>
+                        <th>Linkedin</th>
+                        <th>Company name</th>
+                </tr>
+        </thead>
+        <tbody>
+                {% for applicant in applicant_company_request %}
+                    <tr>
+                            <td>{{ applicant.user_id }}</td>
+                            <td>{{ applicant.stud_name }}</td>
+                            <td>{{ applicant.stud_sub }}</td>
+                            <td>{{ applicant.s_SCGPA }}</td>
+                            <td>{{ applicant.linkedin_link }}</td>
+                            <td>{{ applicant.company_name }}</td>
+                    </tr>
+                {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

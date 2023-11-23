@@ -1,0 +1,143 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+.web_title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+#PVG{
+    color: #000;
+    margin-bottom: 0.1rem;
+}
+#COET{
+    color: blue;
+    margin-bottom: 0.1rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+#PVG_info{
+    color: grey;
+    margin-bottom: 0.1rem;
+}
+#nav_button{
+    color: #FFF;
+    text-decoration: none;
+}
+#log_intro_head{
+    margin-left: 10%;
+    font-size: 3rem;
+}
+#log_intro_para{
+    font-size: 2rem;
+    color: (123,123,123,0.3);
+}
+.col-8{
+    color: #ffffff;
+    border-radius: 15rem;
+    backdrop-filter: blur(4px);
+    background-color: #0000001c;
+}
+
+.main-class{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#login_part
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #596675;
+    background-image: url('https://cdn.dribbble.com/users/300601/screenshots/1804627/media/495d18ee66530ff3065f28bcef3f06a2.gif');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    color: #FFF;
+    padding: 6% 0%;
+}
+
+#login-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#register-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 7rem;
+    width: 23rem;
+    border-radius: 4rem;
+    border: 2px solid black;
+}
+
+#register_h2{
+    margin: 2rem;
+}
+#register-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+#reg-form-group{
+    width: 18rem;
+    margin: 0.2rem;
+}
+.log-form-group{
+    width: 18rem;
+    margin-left: 3.5rem;
+    padding: 0.6rem;
+}
+#footerid{
+    background-color: #111;
+    color: #FFF;
+    font-size: 1.2rem;
+}
+.logo2{
+    width: 110px;
+    height: 110px;
+    margin-left: 2%;
+}
+.nav-item{
+    margin: 0rem 1rem;
+}
+
