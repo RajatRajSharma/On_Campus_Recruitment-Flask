@@ -243,3 +243,13 @@ def logout():
     """Log user out"""
     session.clear()
     return redirect(url_for('login'))
+
+###################################################################################################
+# To run this code you need to install :-
+
+# 1) Install flask         ->  pip install Flask
+# 2) Install cs50          ->  pip install cs50
+# 3) Install Flask-Session ->  pip install Flask-Session
+
+# And after all this just run,
+#         flask run
