@@ -6,23 +6,6 @@
 
 This 🌐Flask-based website revolutionizes campus recruitment🚀, offering a seamless platform for students and companies to connect. Explore user, applicant, and company details along with hiring requests across five essential tables.
 
-## Screenshots
-
-### Website Homepage
-![Website Homepage](static/CS50X_home.png)
-
-### List of Companies Page
-![List of Companies Page](static/CS50X_comp_list.png)
-
-### List of Student Page
-![List of Student Page](static/CS50X_competitors.png)
-
-### Applicant Form Page
-![Applicant Form Page](static/CS50X_applicants.png)
-
-### Company Form Page
-![Company Form Page](static/CS50X_company_form.png)
-
 ## YouTube Tutorial
 
 [![YouTube Tutorial](https://img.youtube.com/vi/J4MSydfFP9U/maxresdefault.jpg)](https://www.youtube.com/watch?v=J4MSydfFP9U&t=1s)
@@ -38,6 +21,23 @@ To run this code, you need to install:
 3. Flask-Session: `pip install Flask-Session`
 
 After installation, run `flask run` in the terminal.
+
+## Screenshots
+
+### Website Homepage
+<img src="static/CS50X_home.png" alt="Website Homepage" width="75%">
+
+### List of Companies Page
+<img src="static/CS50X_comp_list.png" alt="List of Companies Page" width="75%">
+
+### List of Student Page
+<img src="static/CS50X_competitors.png" alt="List of Student Page" width="75%">
+
+### Applicant Form Page
+<img src="static/CS50X_applicants.png" alt="Applicant Form Page" width="75%">
+
+### Company Form Page
+<img src="static/CS50X_company_form.png" alt="Company Form Page" width="75%">
 
 ## Technologies Used
 
