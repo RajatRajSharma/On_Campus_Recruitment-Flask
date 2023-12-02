@@ -9,6 +9,12 @@ This 🌐Flask-based website revolutionizes campus recruitment🚀, offering a s
 ## YouTube Tutorial
 
 [![YouTube Tutorial](https://img.youtube.com/vi/J4MSydfFP9U/maxresdefault.jpg)](https://www.youtube.com/watch?v=J4MSydfFP9U&t=1s)
+<div style="display: flex; align-items: center;">
+  <a href="https://www.youtube.com/watch?v=J4MSydfFP9U&t=1s">
+    <img src="https://img.youtube.com/vi/J4MSydfFP9U/maxresdefault.jpg" alt="YouTube Tutorial" width="25%">
+  </a>
+  <span style="margin-left: 1em;">Watch the YouTube tutorial to learn how to set up and use this project. The tutorial provides a step-by-step guide on running the application and utilizing its features.</span>
+</div>
 
 Watch the YouTube tutorial to learn how to set up and use this project. The tutorial provides a step-by-step guide on running the application and utilizing its features.
 
